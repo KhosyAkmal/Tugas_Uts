@@ -7,6 +7,45 @@
     android:background="#FFEB3B"
     tools:context=".fragmen.daftar">
 
+    <Button
+        android:id="@+id/b_baju"
+        android:layout_width="71dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginEnd="170dp"
+        android:text="Baju"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+    <Button
+        android:id="@+id/b_celana"
+        android:layout_width="68dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="166dp"
+        android:layout_marginEnd="177dp"
+        android:text="Celana"
+        android:textSize="10"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline18" />
+
+    <Button
+        android:id="@+id/b_jaket"
+        android:layout_width="66dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginEnd="173dp"
+        android:text="Jaket"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline20" />
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="172dp"
@@ -27,6 +66,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="149dp"
+        android:layout_height="133dp"
+        android:src="@drawable/jaket2"
+        app:layout_constraintBottom_toTopOf="@+id/guideline20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline16" />
+
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
@@ -37,36 +86,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1. Baju"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline17" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2. Celana"
-        app:layout_constraintBottom_toTopOf="@+id/guideline16"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline18" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="3. Jaket"
-        app:layout_constraintBottom_toTopOf="@+id/guideline19"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline20" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -116,15 +135,5 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.93" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="149dp"
-        android:layout_height="133dp"
-        android:src="@drawable/jaket2"
-        app:layout_constraintBottom_toTopOf="@+id/guideline20"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline16" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
