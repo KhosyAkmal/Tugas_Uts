@@ -18,9 +18,9 @@ public class OutputHasil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_output_hasil);
         textKategori = findViewById(R.id.hasil_kategori);
-        textNama = findViewById(R.id.hasil_nama);
-        textHarga = findViewById(R.id.hasil_items);
-        textItems = findViewById(R.id.hasil_harga);
+        textNama = findViewById(R.id.nama);
+        textHarga = findViewById(R.id.items);
+        textItems = findViewById(R.id.harga);
 
         Bundle extras = getIntent().getExtras();
 

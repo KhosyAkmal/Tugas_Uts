@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioGroup;
@@ -29,7 +28,7 @@ public class HasilActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hasil);
         radioKategori = findViewById(R.id.radioKategori);
-        fieldNama = findViewById(R.id.fieldNama);
+        fieldNama = findViewById(R.id.fieldNamaBarang);
         fieldHarga = findViewById(R.id.fieldHarga);
         fieldItems = findViewById(R.id.fieldItems);
     }
