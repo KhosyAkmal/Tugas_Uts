@@ -16,9 +16,7 @@ public class barang implements Parcelable {
     public String getNama() {
         return nama;
     }
-    public int getHarga() {
-        return harga;
-    }
+    public int getHarga() { return harga;  }
 
 
     public barang(String nama, int items, int harga, String nama_barang) {

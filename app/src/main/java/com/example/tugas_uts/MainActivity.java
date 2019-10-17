@@ -9,6 +9,8 @@ import android.view.View;
 
 import com.example.tugas_uts.activities.HasilActivity;
 import com.example.tugas_uts.fragmen.barang_daftar;
+import com.example.tugas_uts.fragmen.barang_daftar2;
+import com.example.tugas_uts.fragmen.barang_daftar3;
 import com.example.tugas_uts.fragmen.beli;
 import com.example.tugas_uts.fragmen.daftar;
 
@@ -53,9 +55,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void handlerClickCelana(View view) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+        fragmentTransaction.replace(R.id.dynamic_fragment_placeholder,new barang_daftar2());
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
     }
 
     public void handlerClickJaket(View view) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+        fragmentTransaction.replace(R.id.dynamic_fragment_placeholder,new barang_daftar3());
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
     }
 
     public void handlerClickBaju(View view) {

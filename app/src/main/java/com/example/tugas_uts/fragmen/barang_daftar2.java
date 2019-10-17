@@ -19,15 +19,14 @@ import com.example.tugas_uts.classBarang.barang;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class barang_daftar extends Fragment implements View.OnClickListener {
-
+public class barang_daftar2 extends Fragment implements View.OnClickListener {
 
     View view;
     Button button;
     RadioGroup radioGroup;
     EditText textNama, textJumlah, textHarga, textNamaBarang;
 
-    public barang_daftar() {
+    public barang_daftar2() {
         // Required empty public constructor
     }
 
@@ -36,7 +35,7 @@ public class barang_daftar extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_barang_daftar, container, false);
+        view = inflater.inflate(R.layout.fragment_barang_daftar2, container, false);
 
         textNama = view.findViewById(R.id.fieldNama);
         textNamaBarang = view.findViewById(R.id.fieldNamaBarang);
@@ -56,15 +55,14 @@ public class barang_daftar extends Fragment implements View.OnClickListener {
         int jumlah = Integer.parseInt(textJumlah.getText().toString());
 
         barang barang = new barang(nama, jumlah, harga, namaBarang);
-            Bundle bundle = new Bundle();
-            bundle.putParcelable("barang", barang);
-            Fragment Result = new barang_hasil();
-            Result.setArguments(bundle);
-            FragmentTransaction fragmentTransaction = getActivity()
-                    .getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.dynamic_fragment_placeholder, Result);
-            fragmentTransaction.commit();
-        }
-
-
+        Bundle bundle = new Bundle();
+        bundle.putParcelable("barang", barang);
+        Fragment Result = new barang_hasil();
+        Result.setArguments(bundle);
+        FragmentTransaction fragmentTransaction = getActivity()
+                .getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.dynamic_fragment_placeholder, Result);
+        fragmentTransaction.commit();
     }
+}
+
