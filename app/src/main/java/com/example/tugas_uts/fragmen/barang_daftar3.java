@@ -26,7 +26,6 @@ public class barang_daftar3 extends Fragment implements View.OnClickListener {
     Button button;
     RadioGroup radioGroup;
     EditText textNama, textJumlah, textHarga, textNamaBarang;
-    private baju.OnFragmentInteractionListener mListener;
     public barang_daftar3() {
         // Required empty public constructor
     }
